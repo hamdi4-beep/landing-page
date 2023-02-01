@@ -8,11 +8,8 @@
 
 body {
   font-family: Epilogue;
-  font-size: 16px;
   color: hsl(0deg, 0%, 41%);
   padding: 1.5em;
-  outline: 1px solid blue;
-  width: 100%;
 }
 
 img {
@@ -77,6 +74,10 @@ footer {
   display: flex;
   gap: 2rem;
   padding-top: 1.8em;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
