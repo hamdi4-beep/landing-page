@@ -56,7 +56,6 @@ main {
 main .hero-img {
   margin-block: 1.5em;
   margin-inline: -1.5em;
-  outline: 1px solid blue;
 }
 main .big-txt {
   font-size: 2em;
@@ -72,6 +71,12 @@ main .cta {
   padding: 1em 1.5em;
   margin-block: 1.3em;
   border-radius: 15px;
+}
+
+footer {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1.8em;
 }
 
 /*# sourceMappingURL=index.css.map */
