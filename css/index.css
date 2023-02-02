@@ -51,11 +51,10 @@ header .nav-container {
   top: 0;
   width: 50%;
   height: 100%;
-  padding: 1em;
   background-color: hsl(0deg, 0%, 98%);
   transition: all 500ms ease;
+  padding: 1em;
   z-index: 999;
-  outline: 1px solid red;
 }
 header .nav-container .nav-menu > *:not(:last-of-type), header .nav-container .nav-menu {
   margin-bottom: 1.5em;
@@ -102,11 +101,19 @@ main section {
 footer {
   display: flex;
   gap: 2rem;
+  padding: 1.2em;
   padding-top: 1.8em;
 }
 
 .hidden {
   right: -50% !important;
+}
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

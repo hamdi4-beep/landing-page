@@ -25,11 +25,10 @@ header {
         top: 0;
         width: 50%;
         height: 100%;
-        padding: 1em;
         background-color: $clr-bg;
         transition: all 500ms ease;
+        padding: 1em;
         z-index: 999;
-        outline: 1px solid red;
 
         .nav-menu > *:not(:last-of-type), .nav-menu {
             margin-bottom: 1.5em;
