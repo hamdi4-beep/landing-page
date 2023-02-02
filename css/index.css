@@ -29,11 +29,6 @@ ul {
   list-style-type: none;
 }
 
-@media only screen and (max-width: 375px) {
-  .hidden {
-    right: -50% !important;
-  }
-}
 header {
   display: flex;
   align-items: flex-start;
@@ -108,6 +103,10 @@ footer {
   display: flex;
   gap: 2rem;
   padding-top: 1.8em;
+}
+
+.hidden {
+  right: -50% !important;
 }
 
 /*# sourceMappingURL=index.css.map */
