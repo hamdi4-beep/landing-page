@@ -7,7 +7,6 @@ main {
 
     .hero-img {
         margin-block: 1.5em;
-        margin-inline: -1.5em;
     }
 
     .big-txt {
@@ -27,5 +26,9 @@ main {
         margin-block: 1.3em;
         border-radius: 15px;
         margin-inline: auto;
+    }
+
+    section {
+        padding: 1em;
     }
 }

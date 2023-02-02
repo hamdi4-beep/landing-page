@@ -9,7 +9,6 @@
 body {
   font-family: Epilogue;
   color: hsl(0deg, 0%, 41%);
-  padding: 1.2em;
 }
 
 img {
@@ -38,6 +37,7 @@ ul {
 header {
   display: flex;
   align-items: flex-start;
+  padding: 1.2em;
 }
 header .nav-menu-icon {
   position: absolute;
@@ -45,7 +45,6 @@ header .nav-menu-icon {
 }
 header .close-menu {
   text-align: right;
-  outline: 1px solid blue;
   margin-bottom: 1.5em;
 }
 header .close-menu img {
@@ -60,6 +59,8 @@ header .nav-container {
   padding: 1em;
   background-color: hsl(0deg, 0%, 98%);
   transition: all 500ms ease;
+  z-index: 999;
+  outline: 1px solid red;
 }
 header .nav-container .nav-menu > *:not(:last-of-type), header .nav-container .nav-menu {
   margin-bottom: 1.5em;
@@ -82,7 +83,6 @@ main {
 }
 main .hero-img {
   margin-block: 1.5em;
-  margin-inline: -1.5em;
 }
 main .big-txt {
   font-size: 2em;
@@ -99,6 +99,9 @@ main .cta {
   margin-block: 1.3em;
   border-radius: 15px;
   margin-inline: auto;
+}
+main section {
+  padding: 1em;
 }
 
 footer {
