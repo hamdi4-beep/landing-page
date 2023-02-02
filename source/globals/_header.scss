@@ -30,7 +30,12 @@ header {
         transition: all 500ms ease;
 
         .nav-menu > *:not(:last-of-type), .nav-menu {
-            margin-bottom: 1em;
+            margin-bottom: 1.5em;
+        }
+
+        button {
+            width: 100%;
+            text-align: center;
         }
     }
 
@@ -38,6 +43,6 @@ header {
         border: 1px solid $clr-primary;
         border-radius: 10px;
         color: $clr-primary;
-        width: 100%;
+        margin-top: .5em;
     }
 }
