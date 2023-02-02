@@ -1,18 +1,6 @@
-const navMenu = document.querySelector('.nav-menu')
-const entryPoint = document.querySelector('.entry-point')
+const navContainer = document.querySelector('.nav-container')
+const closeBtn = document.querySelector('#close')
+const openBtn = document.querySelector('#open')
 
-const toMatch = [
-    /Android/i,
-    /iPhone/i,
-    /BlackBerry/i,
-    /Windows\sPhone/i,
-    /iPad/i,
-    /iPod/i,
-    /webOS/i
-]
-
-toMatch.some(regex => {
-    if (navigator.userAgent.match(regex)) {
-        for (const elem of [navMenu, entryPoint]) elem.classList.add('hidden')
-    }
-})
+closeBtn.addEventListener('pointerdown', e => navContainer.classList.add('hidden'))
+openBtn.addEventListener('pointerdown', e => navContainer.classList.remove('hidden'))

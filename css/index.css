@@ -9,7 +9,7 @@
 body {
   font-family: Epilogue;
   color: hsl(0deg, 0%, 41%);
-  padding: 1.5em;
+  padding: 1.2em;
 }
 
 img {
@@ -18,33 +18,59 @@ img {
 }
 
 button {
+  display: block;
   font: inherit;
   outline: none;
   border: none;
+  padding: 0.5em 1em;
+  background: none;
 }
 
 ul {
   list-style-type: none;
 }
 
+@media only screen and (max-width: 375px) {
+  .hidden {
+    right: -50% !important;
+  }
+}
 header {
   display: flex;
+  align-items: flex-start;
 }
-header .logo {
-  margin-right: auto;
+header .nav-menu-icon {
+  position: absolute;
+  right: 1.5em;
+}
+header .close-menu {
+  text-align: right;
+  outline: 1px solid blue;
+  margin-bottom: 1.5em;
+}
+header .close-menu img {
+  display: inline;
+}
+header .nav-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 1em;
+  background-color: hsl(0deg, 0%, 98%);
+  transition: all 500ms ease;
+}
+header .nav-container .nav-menu > *:not(:last-of-type), header .nav-container .nav-menu {
+  margin-bottom: 1em;
 }
 header .primary {
   border: 1px solid hsl(0deg, 0%, 8%);
   border-radius: 10px;
-  padding: 0.5em 1em;
   color: hsl(0deg, 0%, 8%);
+  width: 100%;
 }
 
-@media only screen and (max-width: 375px) {
-  .hidden {
-    display: none;
-  }
-}
 main {
   display: flex;
   flex-direction: column-reverse;
@@ -68,16 +94,13 @@ main .cta {
   padding: 1em 1.5em;
   margin-block: 1.3em;
   border-radius: 15px;
+  margin-inline: auto;
 }
 
 footer {
   display: flex;
   gap: 2rem;
   padding-top: 1.8em;
-}
-
-.hidden {
-  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

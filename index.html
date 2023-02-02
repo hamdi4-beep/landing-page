@@ -16,20 +16,26 @@
         <img src="./assets/logo.svg" alt="site logo" class="logo">
 
         <nav>
-            <img src="./assets/icon-menu.svg" class="nav-menu-icon" alt="">
+            <img src="./assets/icon-menu.svg" id="open" class="nav-menu-icon" alt="">
 
-            <ul class="nav-menu hidden">
-                <li>Features</li>
-                <li>Company</li>
-                <li>Career</li>
-                <li>About</li>
-            </ul>
+            <div class="nav-container hidden">
+                <div id="close" class="close-menu">
+                    <img src="./assets/icon-close-menu.svg"alt="">
+                </div>
+
+                <ul class="nav-menu">
+                    <li>Features</li>
+                    <li>Company</li>
+                    <li>Career</li>
+                    <li>About</li>
+                </ul>
+
+                <div class="entry-point">
+                    <button>Login</button>
+                    <button class="primary">Register</button>
+                </div>
+            </div>
         </nav>
-
-        <ul class="entry-point hidden">
-            <li>Login</li>
-            <li class="primary">Register</li>
-        </ul>
     </header>
 
     <main>
@@ -61,7 +67,7 @@
         <div class="meet">
             <img src="./assets/client-meet.svg" alt="">
         </div>
-        
+
         <div class="maker">
             <img src="./assets/client-maker.svg" alt="">
         </div>
