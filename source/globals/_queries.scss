@@ -42,6 +42,7 @@
         flex-direction: row !important;
         text-align: left !important;
         align-items: flex-start;
+        padding-block: 3em;
 
         span {
             display: block;
@@ -64,7 +65,7 @@
     }
 
     main, footer {
-        padding-inline: 7em !important;
+        padding-inline: 8em !important;
     }
 }
 

@@ -64,6 +64,7 @@ ul {
     flex-direction: row !important;
     text-align: left !important;
     align-items: flex-start;
+    padding-block: 3em;
   }
   main span {
     display: block;
@@ -78,7 +79,7 @@ ul {
     margin-block: 0 !important;
   }
   main, footer {
-    padding-inline: 7em !important;
+    padding-inline: 8em !important;
   }
 }
 @media (max-width: 425px) {
