@@ -3,7 +3,7 @@
 header {
     display: flex;
     align-items: flex-start;
-    padding: 1.2em;
+    padding: 1em 2em;
 
     .nav-menu-icon {
         position: absolute;
@@ -19,26 +19,7 @@ header {
         }
     }
 
-    .nav-container {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 50%;
-        height: 100%;
-        background-color: $clr-bg;
-        transition: all 500ms ease;
-        padding: 1em;
-        z-index: 999;
-
-        .nav-menu > *:not(:last-of-type), .nav-menu {
-            margin-bottom: 1.5em;
-        }
-
-        button {
-            width: 100%;
-            text-align: center;
-        }
-    }
+    
 
     .primary {
         border: 1px solid $clr-primary;
