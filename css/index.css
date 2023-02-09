@@ -73,10 +73,14 @@ main section {
   padding: 0.3em;
   text-align: center;
 }
+main section p {
+  line-height: 1.5;
+}
 main h1 {
   line-height: 1;
   margin-top: 1.3em;
   margin-bottom: 0.5em;
+  font-size: 2.5rem;
 }
 main .cta {
   background-color: hsl(0deg, 0%, 8%);
