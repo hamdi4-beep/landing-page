@@ -1,4 +1,26 @@
+@use './variables' as *;
+
 main {
     display: flex;
     flex-direction: column-reverse;
+
+    section {
+        padding: .3em;
+        text-align: center;
+    }
+
+    h1 {
+        line-height: 1;
+        margin-top: 1.3em;
+        margin-bottom: .5em;
+    }
+
+    .cta {
+        background-color: $clr-primary;
+        color: white;
+        padding: .8em 1em;
+        margin-top: 1em;
+        border-radius: 10px;
+        margin-inline: auto;
+    }
 }

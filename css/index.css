@@ -69,6 +69,32 @@ main {
   display: flex;
   flex-direction: column-reverse;
 }
+main section {
+  padding: 0.3em;
+  text-align: center;
+}
+main h1 {
+  line-height: 1;
+  margin-top: 1.3em;
+  margin-bottom: 0.5em;
+}
+main .cta {
+  background-color: hsl(0deg, 0%, 8%);
+  color: white;
+  padding: 0.8em 1em;
+  margin-top: 1em;
+  border-radius: 10px;
+  margin-inline: auto;
+}
+
+footer {
+  display: flex;
+  gap: 1.5rem;
+  margin-block: 2.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 .hidden {
   display: none;
