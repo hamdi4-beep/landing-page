@@ -1,79 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
-    <script defer src="./js/script.js"></script>
-    <script defer src="./js/app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
-    <div class="bg-overlay"></div>
+  <header>
+    <img src="./assets/logo.svg" alt="site logo">
 
-    <header>
-        <img src="./assets/logo.svg" alt="site logo" class="logo">
+    <nav>
+        <div class="nav-mobile-menu">
+            <img src="./assets/icon-menu.svg" id="open" alt="open button">
+        </div>
 
-        <nav>
-            <img src="./assets/icon-menu.svg" id="open" class="nav-menu-icon" alt="">
-
-            <div class="nav-container hidden">
-                <div class="close-menu">
-                    <img src="./assets/icon-close-menu.svg" id="close" alt="">
-                </div>
-
-                <ul class="nav-menu">
-                    <li>Features</li>
-                    <li>Company</li>
-                    <li>Career</li>
-                    <li>About</li>
-                </ul>
-
-                <div class="entry-point">
-                    <button>Login</button>
-                    <button class="primary">Register</button>
-                </div>
+        <div class="nav-items hidden">
+            <div class="close-btn">
+                <img src="./assets/icon-close-menu.svg" id="close" alt="close button">
             </div>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h1 class="big-txt"><span>Make</span> remote work</h1>
-            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity roars.
-            </p>
-            <button class="cta">Learn more</button>
-        </section>
+            <ul>
+                <li>
+                    <span>Features</span>
+                    <img src="./assets/icon-arrow-down.svg" alt="an arrow down">
 
-        <div class="hero-img">
-            <picture>
-                <source srcset="./assets/image-hero-desktop.png" media="(min-width: 1024px)" />
-                <img src="./assets/image-hero-mobile.png" alt="guy holding a laptop">
-            </picture>
+                    <ul class="hidden">
+                        <li>TodoList</li>
+                        <li>Calender</li>
+                        <li>Reminders</li>
+                        <li>Planning</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Company</span>
+                    <img src="./assets/icon-arrow-down.svg" alt="an arrow down">
+
+                    <ul class="hidden">
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                    </ul>
+                </li>
+
+                <li>Careers</li>
+                <li>About</li>
+            </ul>
+
+            <div class="entry-point">
+                <button>Login</button>
+                <button class="primary">Register</button>
+            </div>
         </div>
-    </main>
+    </nav>
+  </header>
 
-    <footer>
-        <div class="databiz">
-            <img src="./assets/client-databiz.svg" alt="">
-        </div>
+  <main>
+    <section>
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button>Learn more</button>
+    </section>
 
-        <div class="audiophile">
-            <img src="./assets/client-audiophile.svg" alt="">
-        </div>
+    <div>
+        <picture>
+            <source srcset="./assets/image-hero-mobile.png" media="(max-width: 375px)" />
+            <img src="./assets/image-hero-desktop.png" alt="">
+        </picture>
+    </div>
+  </main>
 
-        
-        <div class="meet">
-            <img src="./assets/client-meet.svg" alt="">
-        </div>
+  <footer>
+    <img src="./assets/client-databiz.svg" alt="client databiz">
+    <img src="./assets/client-audiophile.svg" alt="client audiophile">
+    <img src="./assets/client-maker.svg" alt="client maker">
+    <img src="./assets/client-meet.svg" alt="client meet">
+  </footer>
 
-        <div class="maker">
-            <img src="./assets/client-maker.svg" alt="">
-        </div>
-    </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hamdi</a>.
+  </div>
+
+  <script>
+    const navItems = document.querySelector('.nav-items')
+    const openBtn = document.querySelector('#open')
+    const closeBtn = document.querySelector('#close')
+
+    openBtn.addEventListener('pointerdown', e => navItems.classList.remove('hidden'))
+    closeBtn.addEventListener('pointerdown', e => navItems.classList.add('hidden'))
+  </script>
 </body>
 </html>

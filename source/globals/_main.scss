@@ -1,34 +1,4 @@
-@use './variables' as *;
-
 main {
     display: flex;
     flex-direction: column-reverse;
-    text-align: center;
-
-    .hero-img {
-        margin-block: 1.5em;
-    }
-
-    .big-txt {
-        font-size: 2em;
-        color: $clr-primary;
-        margin-block: .5em;
-    }
-
-    p {
-        line-height: 1.5;
-    }
-
-    .cta {
-        background-color: $clr-primary;
-        color: white;
-        padding: 1em 1.5em;
-        margin-block: 1.3em;
-        border-radius: 15px;
-        margin-inline: auto;
-    }
-
-    section {
-        padding: 1em;
-    }
 }

@@ -8,165 +8,69 @@
 
 body {
   font-family: Epilogue;
-  color: hsl(0deg, 0%, 41%);
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
 }
 
 picture, img {
-  display: block;
   max-width: 100%;
 }
 
 button {
   display: block;
   font: inherit;
-  color: inherit;
-  outline: none;
-  border: none;
-  padding: 0.5em 1em;
   background: none;
+  border: none;
+  outline-color: transparent;
 }
 
-ul {
-  list-style-type: none;
-}
-
-@media (min-width: 426px) {
-  header {
-    display: flex;
-    align-items: center;
-  }
-  header .logo {
-    align-self: center;
-    margin-right: 3em;
-  }
-  header nav {
-    width: 100%;
-  }
-  header nav ul {
-    gap: 2rem;
-  }
-  header nav .nav-container, header nav ul, header nav .entry-point {
-    display: flex;
-    align-items: center;
-  }
-  header nav .nav-menu-icon, header nav .close-menu {
-    display: none;
-  }
-  header nav .entry-point {
-    margin-left: auto;
-    align-items: center;
-    gap: 1rem;
-  }
-  header nav .entry-point .primary {
-    margin: 0;
-  }
-  main {
-    flex-direction: row !important;
-    text-align: left !important;
-    align-items: flex-start;
-    padding-block: 3em;
-  }
-  main span {
-    display: block;
-  }
-  main section .big-txt {
-    font-size: 3rem;
-  }
-  main section .cta {
-    margin-inline: 0;
-  }
-  main .hero-img {
-    margin-block: 0 !important;
-  }
-  main, footer {
-    padding-inline: 8em !important;
-  }
-}
-@media (max-width: 425px) {
-  .nav-container {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-color: hsl(0deg, 0%, 98%);
-    transition: all 500ms ease;
-    padding: 1em;
-    z-index: 999;
-  }
-  .nav-container .nav-menu > *:not(:last-of-type), .nav-container .nav-menu {
-    margin-bottom: 1.5em;
-  }
-  .nav-container button {
-    width: 100%;
-    text-align: center;
-  }
-}
 header {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 1em 2em;
+  padding: 1em;
 }
-header .nav-menu-icon {
-  position: absolute;
-  right: 1.5em;
+header .nav-items {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 1em;
 }
-header .close-menu {
+header .nav-items li {
+  margin-bottom: 1em;
+}
+header .nav-items span {
+  margin-right: 0.5em;
+}
+header .nav-items .close-btn {
   text-align: right;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
-header .close-menu img {
+header .nav-items .close-btn img {
   display: inline;
 }
-header .primary {
+header .nav-items .entry-point button {
+  padding: 0.6em 1em;
+  width: 100%;
+  border-radius: 15px;
+}
+header .nav-items .entry-point button.primary {
   border: 1px solid hsl(0deg, 0%, 8%);
-  border-radius: 10px;
-  margin-top: 0.5em;
+  padding-inline: 4em;
+  margin-top: 0.3em;
 }
 
 main {
   display: flex;
   flex-direction: column-reverse;
-  text-align: center;
-}
-main .hero-img {
-  margin-block: 1.5em;
-}
-main .big-txt {
-  font-size: 2em;
-  color: hsl(0deg, 0%, 8%);
-  margin-block: 0.5em;
-}
-main p {
-  line-height: 1.5;
-}
-main .cta {
-  background-color: hsl(0deg, 0%, 8%);
-  color: white;
-  padding: 1em 1.5em;
-  margin-block: 1.3em;
-  border-radius: 15px;
-  margin-inline: auto;
-}
-main section {
-  padding: 1em;
-}
-
-footer {
-  display: flex;
-  gap: 2rem;
-  padding: 1.2em;
-  padding-top: 1.8em;
 }
 
 .hidden {
-  right: -50% !important;
-}
-
-.bg-overlay {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
 

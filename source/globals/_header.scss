@@ -2,28 +2,48 @@
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 1em 2em;
+    padding: 1em;
 
-    .nav-menu-icon {
-        position: absolute;
-        right: 1.5em;
-    }
+    .nav-items {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 1em;
 
-    .close-menu {
-        text-align: right;
-        margin-bottom: 1.5em;
-
-        img {
-            display: inline;
+        li {
+            margin-bottom: 1em;
         }
-    }
 
-    
+        span {
+            margin-right: .5em;
+        }
 
-    .primary {
-        border: 1px solid $clr-primary;
-        border-radius: 10px;
-        margin-top: .5em;
+        .close-btn {
+            text-align: right;
+            margin-bottom: 1em;
+
+            img {
+                display: inline;
+            }
+        }
+
+        .entry-point {
+
+            button {
+                padding: .6em 1em;
+                width: 100%;
+                border-radius: 15px;
+
+                &.primary {
+                    border: 1px solid $clr-primary;
+                    padding-inline: 4em;
+                    margin-top: .3em;
+                }
+            }
+        }
     }
 }

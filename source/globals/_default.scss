@@ -10,24 +10,21 @@
 
 body {
     font-family: $ff-base;
-    color: $clr-txt;
+    font-size: $fs-base;
+}
+
+ul {
+    list-style: none;
 }
 
 picture, img {
-    display: block;
     max-width: 100%;
 }
 
 button {
     display: block;
     font: inherit;
-    color: inherit;
-    outline: none;
-    border: none;
-    padding: .5em 1em;
     background: none;
-}
-
-ul {
-    list-style-type: none;
+    border: none;
+    outline-color: transparent;
 }
