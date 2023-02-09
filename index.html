@@ -105,8 +105,15 @@
     const openBtn = document.querySelector('#open')
     const closeBtn = document.querySelector('#close')
 
-    openBtn.addEventListener('pointerdown', e => navItems.classList.remove('hidden'))
-    closeBtn.addEventListener('pointerdown', e => navItems.classList.add('hidden'))
+    openBtn.addEventListener('pointerdown', e => {
+        document.body.classList.add('overlay')
+        navItems.classList.remove('hidden')
+    })
+
+    closeBtn.addEventListener('pointerdown', e => {
+        document.body.classList.remove('overlay')
+        navItems.classList.add('hidden')
+    })
   </script>
 </body>
 </html>
