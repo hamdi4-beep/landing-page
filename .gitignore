@@ -1,3 +1,4 @@
-**/js/app.**
+**/js/script.ts
 **/db/
 ref.txt
+tsconfig.json
