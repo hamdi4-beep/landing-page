@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 1em;
+    color: $clr-txt;
 
     .nav-items {
         background-color: white;
@@ -12,10 +13,10 @@ header {
         top: 0;
         right: 0;
         height: 100%;
-        padding: 1em;
+        padding: 1.3em;
 
         li {
-            margin-bottom: 1.3em;
+            margin-bottom: 1.5em;
         }
 
         span {
@@ -28,6 +29,15 @@ header {
 
             img {
                 display: inline;
+            }
+        }
+
+        .dropdown-features, .dropdown-company {
+            margin-top: 1.5em;
+            margin-left: 1.5em;
+
+            img {
+                margin-right: .5em;
             }
         }
 

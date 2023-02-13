@@ -22,6 +22,7 @@ picture, img {
 button {
   display: block;
   font: inherit;
+  color: inherit;
   background: none;
   border: none;
   outline-color: transparent;
@@ -32,6 +33,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1em;
+  color: hsl(0deg, 0%, 41%);
 }
 header .nav-items {
   background-color: white;
@@ -39,10 +41,10 @@ header .nav-items {
   top: 0;
   right: 0;
   height: 100%;
-  padding: 1em;
+  padding: 1.3em;
 }
 header .nav-items li {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.5em;
 }
 header .nav-items span {
   margin-right: 0.5em;
@@ -53,6 +55,13 @@ header .nav-items .close-btn {
 }
 header .nav-items .close-btn img {
   display: inline;
+}
+header .nav-items .dropdown-features, header .nav-items .dropdown-company {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+}
+header .nav-items .dropdown-features img, header .nav-items .dropdown-company img {
+  margin-right: 0.5em;
 }
 header .nav-items .entry-point button {
   padding: 0.6em 1em;
@@ -75,6 +84,7 @@ main section {
 }
 main section p {
   line-height: 1.5;
+  color: hsl(0deg, 0%, 41%);
 }
 main h1 {
   line-height: 1;

@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <script src="./dist/js/script.js" defer></script>
+  <script src="./js/script.js" defer></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -36,21 +36,36 @@
             <ul>
                 <li>
                     <span id="features">Features</span>
-                    <img src="./assets/icon-arrow-down.svg" alt="an arrow down">
+                    <img src="./assets/icon-arrow-down.svg" class="arrow-features" alt="an arrow down">
 
-                    <ul class="features hidden">
-                        <li>TodoList</li>
-                        <li>Calender</li>
-                        <li>Reminders</li>
-                        <li>Planning</li>
+                    <ul class="features dropdown-features">
+                        <li>
+                          <img src="./assets/icon-todo.svg" alt="todo icon">
+                          TodoList
+                        </li>
+
+                        <li>
+                          <img src="./assets/icon-calendar.svg" alt="calendar icon">
+                          Calender
+                        </li>
+
+                        <li>
+                          <img src="./assets/icon-reminders.svg" alt="reminders icon">
+                          Reminders
+                        </li>
+
+                        <li>
+                          <img src="./assets/icon-planning.svg" alt="planning icon">
+                          Planning
+                        </li>
                     </ul>
                 </li>
 
                 <li>
                     <span id="company">Company</span>
-                    <img src="./assets/icon-arrow-down.svg" alt="an arrow down">
+                    <img src="./assets/icon-arrow-down.svg" class="arrow-company" alt="an arrow down">
 
-                    <ul class="hidden">
+                    <ul class="dropdown-company">
                         <li>History</li>
                         <li>Our Team</li>
                         <li>Blog</li>
