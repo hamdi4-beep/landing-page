@@ -25,5 +25,4 @@ function dropDown(e, str) {
         arrowIcon.src = './assets/icon-arrow-down.svg';
     }
     dropdown.classList.toggle('hidden');
-    console.log(str);
 }
