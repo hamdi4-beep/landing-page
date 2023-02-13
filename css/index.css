@@ -47,6 +47,7 @@ header .nav-items li {
   margin-bottom: 1.5em;
 }
 header .nav-items span {
+  user-select: none;
   margin-right: 0.5em;
 }
 header .nav-items .close-btn {
