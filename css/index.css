@@ -87,6 +87,14 @@ main section p {
   line-height: 1.5;
   color: hsl(0deg, 0%, 41%);
 }
+main section .clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  padding: 1em;
+  gap: 2rem;
+}
 main h1 {
   line-height: 1;
   margin-top: 1.3em;
@@ -98,19 +106,88 @@ main .cta {
   color: white;
   padding: 0.8em 1em;
   margin-top: 1em;
+  border: 1px solid hsl(0deg, 0%, 8%);
   border-radius: 10px;
   margin-inline: auto;
 }
-
-footer {
-  display: flex;
-  gap: 1.5rem;
-  margin-block: 2.5em;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+main .cta:hover {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
+  cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  header {
+    justify-content: left;
+    align-items: center;
+    padding: 1.3em;
+  }
+  header nav {
+    width: 100%;
+  }
+  header ul, header .entry-point {
+    display: flex;
+    gap: 2rem;
+  }
+  header ul li, header .entry-point li {
+    margin-bottom: 0 !important;
+  }
+  header ul .primary, header .entry-point .primary {
+    margin-top: 0 !important;
+    padding-inline: 1.5em !important;
+  }
+  header .nav-items {
+    position: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-left: 2.3em;
+  }
+  header .nav-items .dropdown-features, header .nav-items .dropdown-company {
+    position: absolute;
+    display: grid;
+    gap: 1em;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    background-color: white;
+    margin-left: 0;
+    padding: 1.3em;
+  }
+  header .nav-items .hidden {
+    display: none;
+  }
+  header .nav-mobile-menu, header .close-btn {
+    display: none;
+  }
+  header .entry-point {
+    margin-left: auto;
+  }
+  main {
+    flex-direction: row;
+    gap: 5rem;
+    padding-inline: 5em;
+    align-items: flex-start;
+  }
+  main section {
+    padding-inline: 2em;
+    text-align: left;
+  }
+  main section span {
+    display: block;
+  }
+  main section h1 {
+    font-size: 4rem;
+  }
+  main section .cta {
+    margin-inline: 0;
+    margin-top: 1.3em;
+  }
+  main section .clients-list {
+    justify-content: left;
+    padding: 0;
+  }
+}
 .hidden {
   display: none;
 }

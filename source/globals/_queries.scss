@@ -1,0 +1,90 @@
+@use './variables' as *;
+
+@media (min-width: 768px) {
+    header {
+        justify-content: left;
+        align-items: center;
+        padding: 1.3em;
+
+        nav {
+            width: 100%;
+        }
+
+        ul, .entry-point {
+            display: flex;
+            gap: 2rem;
+            
+            li {
+                margin-bottom: 0 !important;
+            }
+
+            .primary {
+                margin-top: 0 !important;
+                padding-inline: 1.5em !important;
+            }
+
+        }
+
+        .nav-items {
+            position: inherit;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin-left: 2.3em;
+
+            .dropdown-features, .dropdown-company {
+                position: absolute;
+                display: grid;
+                gap: 1em;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgb(0 0 0 / .2);
+                z-index: 999;
+                background-color: white;
+                margin-left: 0;
+                padding: 1.3em;
+            }
+
+            .hidden {
+                display: none;
+            }
+        }
+
+        .nav-mobile-menu, .close-btn {
+            display: none;
+        }
+
+        .entry-point {
+            margin-left: auto;
+        }
+    }
+
+    main {
+        flex-direction: row;
+        gap: 5rem;
+        padding-inline: 5em;
+        align-items: flex-start;
+
+        section {
+            padding-inline: 2em;
+            text-align: left;
+
+            span {
+                display: block;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            .cta {
+                margin-inline: 0;
+                margin-top: 1.3em;
+            }
+
+            .clients-list {
+                justify-content: left;
+                padding: 0;
+            }
+        }
+    }
+}
