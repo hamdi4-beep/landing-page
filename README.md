@@ -39,8 +39,6 @@ Users should be able to:
 - SASS
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 I learned how to set up a workflow that best suits my needs and coding preference with minimal amount of work.
@@ -54,5 +52,3 @@ Going forward from now, I'm going to focus more on developing project management
 - Website - [Hamdi](http://hamdi4-beep.github.io/portfolio)
 - Frontend Mentor - [@hamdi4-beep](https://www.frontendmentor.io/profile/hamdi4-beep)
 - Twitter - [@Hamdi33727935](https://twitter.com/Hamdi33727935)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
