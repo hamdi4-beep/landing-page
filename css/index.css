@@ -46,9 +46,13 @@ header .nav-items {
 header .nav-items li {
   margin-bottom: 1.5em;
 }
+header .nav-items li:hover {
+  color: hsl(0deg, 0%, 8%);
+}
 header .nav-items span {
   user-select: none;
   margin-right: 0.5em;
+  cursor: pointer;
 }
 header .nav-items .close-btn {
   text-align: right;
@@ -68,11 +72,18 @@ header .nav-items .entry-point button {
   padding: 0.6em 1em;
   width: 100%;
   border-radius: 15px;
+  cursor: pointer;
+}
+header .nav-items .entry-point button:hover {
+  color: hsl(0deg, 0%, 8%);
 }
 header .nav-items .entry-point button.primary {
-  border: 1px solid hsl(0deg, 0%, 8%);
+  border: 1px solid;
   padding-inline: 4em;
   margin-top: 0.3em;
+}
+header .nav-items .entry-point button.primary:hover {
+  border-color: hsl(0deg, 0%, 8%);
 }
 
 main {
