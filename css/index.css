@@ -37,7 +37,7 @@ header {
   color: hsl(0deg, 0%, 41%);
 }
 header .nav-items {
-  background-color: inherit;
+  background-color: hsl(0deg, 0%, 98%);
   position: fixed;
   top: 0;
   right: 0;
@@ -155,6 +155,7 @@ main .cta:hover {
     align-items: center;
     padding: 0;
     margin-left: 2.3em;
+    background-color: hsl(0deg, 0%, 98%);
   }
   header .nav-items .dropdown-features, header .nav-items .dropdown-company {
     position: absolute;
